@@ -21,3 +21,46 @@ print('list2[2]: ' + list2[2])
 # 删除第3个元素
 del list3[2]
 print('list3', list3)
+
+# 5.list的方法
+# 5.1 List append()方法
+'''
+append() 方法用于在列表末尾添加新的对象。
+append()方法语法：
+list.append(obj)
+'''
+print("# 5.1 List append()方法")
+aList = ['java', 'php']
+aList.append("python")
+print(aList)
+
+# 5.2 List count()方法
+'''
+count() 方法用于统计某个元素在列表中出现的次数。
+count()方法语法：
+
+list.count(obj)
+'''
+print('# 5.2 List count()方法')
+cList = ['lining', 'adidas', 'nike', 'nike']
+print(cList.count('nike'))
+
+# 5.3 List reverse()方法
+'''
+reverse() 函数用于反向列表中元素。
+reverse()方法语法：
+
+list.reverse()
+'''
+print('# 5.3 List reverse()方法')
+rList = ['win10', 'win7', 'xp']
+rList.reverse()
+print(rList)
+
+# 5.4 List remove()方法
+print('# 5.4 List remove()方法')
+mList = ['mac', 'windows', 'linux']
+mList.remove('linux')
+print(mList)
+
+
