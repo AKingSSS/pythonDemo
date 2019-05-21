@@ -27,3 +27,5 @@ Python 的 from 语句让你从模块中导入一个指定的部分到当前命�
 from modname import name1[, name2[, ... nameN]]
 '''
 print(price2(300))
+
+
