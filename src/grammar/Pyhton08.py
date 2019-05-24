@@ -61,3 +61,16 @@ print(d6, type(d6))
 s = str(d6)
 print(s, type(s))  # 输出字典，以可打印的字符串表示
 
+# 6易错题
+
+d = {'1': 1, '2': 2, '3': 3}
+d2 = d
+d['2'] = 5
+print('d2', d2)
+print(d['2'] + d2['2'])
+
+a = 5
+b = a
+a = 4
+print('a + b = ', a + b)
+
