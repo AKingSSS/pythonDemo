@@ -88,7 +88,8 @@ Python find() 方法检测字符串中是否包含子字符串 str ，
 # str1 = "this is string example....wow!!!"
 str1 = "the python language is a cross platform language"
 str2 = "language"
-print(str1.find(str2))  # 从下标0开始，查找在字符串里第一个出现的子串，返回结果：15
-print(str1.find(str2, 10))  # 从下标10开始，查找在字符串里第一个出现的子串，返回结果：15
-print(str1.find(str2, 30))  # 从下标20开始，查找在字符串里第一个出现的子串，返回结果：-1
+print(str1.find(str2))  # 从下标0开始，查找在字符串里第一个出现的子串，返回结果：11
+print(str1.find(str2, 10))  # 从下标10开始，查找在字符串里第一个出现的子串，返回结果：11
+print(str1.find(str2, 30))  # 从下标20开始，查找在字符串里第一个出现的子串，返回结果：40
+
 
