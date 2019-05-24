@@ -77,3 +77,18 @@ print('{:,}'.format(10000000))
 # 百分比格式
 print('{:.2%}'.format(0.25))
 
+# 5.内置函数find
+'''
+Python find() 方法检测字符串中是否包含子字符串 str ，
+如果指定 beg（开始） 和 end（结束） 范围，
+则检查是否包含在指定范围内，
+如果包含子字符串返回开始的索引值，否则返回-1。
+'''
+
+# str1 = "this is string example....wow!!!"
+str1 = "the python language is a cross platform language"
+str2 = "language"
+print(str1.find(str2))  # 从下标0开始，查找在字符串里第一个出现的子串，返回结果：15
+print(str1.find(str2, 10))  # 从下标10开始，查找在字符串里第一个出现的子串，返回结果：15
+print(str1.find(str2, 30))  # 从下标20开始，查找在字符串里第一个出现的子串，返回结果：-1
+
