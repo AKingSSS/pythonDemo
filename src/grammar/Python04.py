@@ -1,4 +1,6 @@
 import random
+import math
+
 # 数字（number）
 """
 Python 支持三种不同的数值类型
@@ -7,8 +9,8 @@ Python 支持三种不同的数值类型
 3、复数
 """
 # 我们可以使用十六进制和八进制来代表整数
-print(0xA0F)    # 十六进制
-print(0o37)     # 八进制
+print(0xA0F)  # 十六进制
+print(0o37)  # 八进制
 
 # 1.数字类型转换
 '''
@@ -26,14 +28,14 @@ str4 = '0.09'
 print(float(str3) + float(str4))
 # 浮点数转整型
 a = 1.3
-print(int(a))       # --->> 1
+print(int(a))  # --->> 1
 
 # 2.数字运算
 '''
 在整数除法中，除法 / 总是返回一个浮点数，如果只想得到整数的结果，丢弃可能的分数部分，可以使用运算符 // 
 '''
-print(2/3)      # --->>0.6666666666666666
-print(1/2)      # --->>0.5
+print(2 / 3)  # --->>0.6666666666666666
+print(1 / 2)  # --->>0.5
 
 # 3.数字函数
 '''
@@ -68,3 +70,12 @@ print("从 range(100) 返回一个随机数 : ", random.choice(range(100)))
 print("从列表中 [1, 2, 3, 5, 9]) 返回一个随机元素 : ", random.choice([1, 2, 3, 5, 9]))
 print("从字符串中 'Runoob' 返回一个随机字符 : ", random.choice('Runoob'))
 
+# abs(x) 与fabs(x)区别
+'''
+abs() 是一个内置函数，而 fabs() 在 math 模块中定义的。
+fabs() 函数只适用于 float 和 integer 类型，而 abs() 也适用于复数。
+'''
+print(abs(-10.00))  # --->>> 10.0
+print(abs(3 + 4j))  # --->>> 5.0 --->> 复数的绝对值即他的模 sqrt(3^2+(-4)^2)=5
+print(math.fabs(-10.00))  # --->>> 10.0
+# print(math.fabs(3 + 4j))  # --->> TypeError: can't convert complex to float
