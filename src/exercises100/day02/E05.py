@@ -5,3 +5,14 @@
 程序分析 练练手就随便找个排序算法实现一下，偷懒就直接调函数。
 
 """
+raw = []
+for i in range(3):
+    x = int(input('int%d:' %(i)))
+    raw.append(x)
+for i in range(len(raw)):
+    for j in range(i, len(raw)):
+        if raw[i] > raw[j]:
+            raw[i], raw[j] = raw[j], raw[i]
+print(raw)
+
+
